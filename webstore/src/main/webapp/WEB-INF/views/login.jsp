@@ -15,7 +15,6 @@
 		<div class="jumbotron">
 			<div class="container">
 				<h1>Login</h1>
-				<p>login</p>
 			</div>
 		</div>
 	</section>
@@ -51,6 +50,13 @@
 						</form>
 					</div>
 				</div>
+			<section class="container">
+				<div class="row">
+					<p>
+						<a href="/webstore" class="btn btn-default"> Home screen </a>
+					</p>
+				</div>
+			</section>
 			</div>
 		</div>
 	</div>

@@ -11,21 +11,24 @@
 <body>
 	<section>
 		<div class="jumbotron">
-			<div align="right">
-				<a href="<c:url value="j_spring_security_logout" />" class="btn btn-default"> Logout</a>
-			</div>
 			<div class="container">
-				<h1>${greeting}</h1>
-				<p>${info}</p>
+				<h1>Book removed successfully!</h1>
 			</div>
 		</div>
+		
 	</section>
 	<section class="container">
 		<div class="row">
 			<p>
-				<a href="/webstore/books" class="btn btn-default"> Search books </a>
-				<a href="/webstore/books/add" class="btn btn-default"> Add book </a>
-				<a href="/webstore/login" class="btn btn-default"> Login </a>
+				<a href="/webstore/books/all" class="btn btn-default"> 
+					Show all books
+				</a>
+				<a href="/webstore/books/search" class="btn btn-default"> 
+					Search books
+				</a>
+				<a href="/webstore" class="btn btn-default"> 
+					Home
+				</a>
 			</p>
 		</div>
 	</section>

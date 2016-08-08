@@ -7,12 +7,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import pl.spring.demo.constants.ModelConstants;
 import pl.spring.demo.constants.ViewNames;
 
+/**
+ * Controller class for home related pages
+ * 
+ * @author PPATRONI
+ *
+ */
 @Controller
 public class HomeController {
+	
+	private static final String WELCOME = "Dat is a welcome page!";
+	private static final String INFO_TEXT = "Here You shall display information containing informations about whatever your heart desires!";
 
-	private static final String INFO_TEXT = "Here You shall display information containing informations about newly created TO";
-	private static final String WELCOME = "This is a welcome page";
-
+	/**
+	 * Method controls welcome page display
+	 * 
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping("/")
 	public String welcome(Model model) {
 		model.addAttribute(ModelConstants.GREETING, WELCOME);

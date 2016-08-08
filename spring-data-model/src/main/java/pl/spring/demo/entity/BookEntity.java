@@ -16,6 +16,11 @@ import pl.spring.demo.enumerations.BookStatus;
 @Entity
 @Table(name = "BOOK")
 public class BookEntity implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4220567909599490666L;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;

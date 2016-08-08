@@ -15,6 +15,12 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import pl.spring.demo.constants.ModelConstants;
 import pl.spring.demo.controller.HomeController;
 
+/**
+ * Unit test class for testing {@link HomeCotroller}
+ * 
+ * @author PPATRONI
+ *
+ */
 public class HomeControllerTest {
 
 	private MockMvc mockMvc;

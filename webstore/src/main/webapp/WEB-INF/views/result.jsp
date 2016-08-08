@@ -6,28 +6,29 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet"
 	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-<title>Hello</title>
+<title>Book input test</title>
 </head>
 <body>
 	<section>
 		<div class="jumbotron">
-			<div align="right">
-				<a href="<c:url value="j_spring_security_logout" />" class="btn btn-default"> Logout</a>
-			</div>
 			<div class="container">
-				<h1>${greeting}</h1>
-				<p>${info}</p>
+				<h1>Book added successfully</h1>
 			</div>
 		</div>
+		
 	</section>
 	<section class="container">
 		<div class="row">
+			<p>Following book added:</p>
+			<h3>${newBook.id}. ${newBook.authors}, <i>${newBook.title}</i></h3>
 			<p>
-				<a href="/webstore/books" class="btn btn-default"> Search books </a>
-				<a href="/webstore/books/add" class="btn btn-default"> Add book </a>
-				<a href="/webstore/login" class="btn btn-default"> Login </a>
+				<a href="/webstore/books/add" class="btn btn-default"> 
+					Submit another book
+				</a>
+				<a href="/webstore" class="btn btn-default"> 
+					Home
+				</a>
 			</p>
 		</div>
 	</section>
-</body>
 </html>

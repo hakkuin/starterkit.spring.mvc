@@ -8,14 +8,15 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
 	<security:http auto-config="true">
-		<security:intercept-url pattern="/books/add"
-			access="ROLE_ADMIN" />
+ 		<security:intercept-url pattern="/books/add" access="ROLE_ADMIN" />
+		<security:intercept-url pattern="/books/delete" access="ROLE_TECH" />
 		<security:form-login login-page="/login"
 			default-target-url="/books/add" authentication-failure-url="/loginfailed" />
+		<security:form-login login-page="/login" 
+			default-target-url="/books/delete" authentication-failure-url="/loginfailed" />
 		<security:logout logout-success-url="/logout" />
-		<security:access-denied-handler
-			error-page="/403" />
-	</security:http>
+		<security:access-denied-handler error-page="/403" />
+		</security:http>
 
 	<security:authentication-manager>
 		<security:authentication-provider>
@@ -24,6 +25,8 @@
 					authorities="ROLE_ADMIN" />
 				<security:user name="user" password="user"
 					authorities="ROLE_USER" />
+				<security:user name="tech" password="tech"
+					authorities="ROLE_TECH" />
 			</security:user-service>
 		</security:authentication-provider>
 	</security:authentication-manager>
